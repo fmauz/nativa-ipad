@@ -1,0 +1,18 @@
+<div class="row">
+  <a href="" class="backHome btn"><i class="icon-home"></i>Menu principal</a>
+</div>
+
+<h2 class="question"><%= text %></h2>
+
+  <ul class="unstyled">
+    <% _.each( answers, function(answer){ %>
+    <li>
+      <label class="label_radio" for="answer_<%= answer.id %>">
+        <input <%= selected == answer.id ? 'checked="checked"' : ""%> type="radio" id="answer_<%= answer.id %>" name="answer" value="<%= answer.id%>" /> <%= answer.text %> (<%= answer.score%> pontos)
+      </label>
+    </li>
+    <% }); %>
+  </ul>
+
+<a href="" class="previous btn btn-large disabled"><i class="icon-arrow-left"></i> Anterior</a>
+<a href="" class="next btn btn-large disabled">Próximo <i class="icon-arrow-right"></i></a>

@@ -1,0 +1,12 @@
+.header-page { padding:60px 0px 25px 0px; margin-bottom:10px; background:#c7c7c7;}
+
+.label_radio        { padding:10px 0px 10px 60px; background:url(../img/radio.png) no-repeat; }
+.label_radio input  { position:absolute; left:-99999px; }
+
+.label_radio.r_on   { background-position: 0px -39px; }
+.label_radio.r_off  { background-position: 0px 0px; }
+
+.answers { margin:10px 0px; }
+
+.menu_game li { margin-bottom:10px;}
+.backHome, .next { float:right; }

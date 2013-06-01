@@ -1,0 +1,24 @@
+<div class="row">
+  <a href="" class="backHome btn"><i class="icon-home"></i>Menu principal</a>
+</div>
+
+<h3>Total de registros: <%= items.length %></h3>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Inicio</th>
+      <th>Fim</th>
+      <th>Total de pontos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%_.each( items, function(item){%>
+    <tr>
+      <td><%= item.started_at %></td>
+      <td><%= item.ended_at %></td>
+      <td><%= item.score %> pontos</td>
+    </tr>
+    <%})%>
+  </tbody>
+</table>
