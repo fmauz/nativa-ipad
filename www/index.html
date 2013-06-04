@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="format-detection" content="telephone=no" />
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />      
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
   <title>Quiz</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
@@ -11,14 +11,10 @@
 </head>
 <body>
 
-  <div class="text-center header-page">
-      <div class="container">
-        <h1>Quiz</h1>
-      </div>
-  </div>
-  
+
+
   <div id="content" class="container"></div>
-  <script type="text/javascript" src="js/lib/cordova-2.7.0.js"></script>
+  <!--<script type="text/javascript" src="js/lib/cordova-2.7.0.js"></script>-->
   <script type="text/javascript" src="js/lib/jquery.js"></script>
   <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/lib/underscore-min.js"></script>
@@ -31,16 +27,17 @@
   <script type="text/javascript" src="js/models/question.js"></script>
   <script type="text/javascript" src="js/models/log.js"></script>
   <script type="text/javascript" src="js/models/fragrance.js"></script>
-  
+
   <script type="text/javascript" src="js/views/dashboard.js"></script>
   <script type="text/javascript" src="js/views/game.js"></script>
   <script type="text/javascript" src="js/views/log.js"></script>
   <script type="text/javascript" src="js/views/finish.js"></script>
 
   <script type="text/javascript" src="js/router.js"></script>
-  
+
   <script type="text/javascript">
     app.initialize();
+    app.onDeviceReady();
   </script>
 </body>
 </html>

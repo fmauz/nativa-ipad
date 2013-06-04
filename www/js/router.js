@@ -1,6 +1,6 @@
 var backbone_router = Backbone.Router.extend({
-  routes: { 
-    "play": "playQuiz", 
+  routes: {
+    "play": "playQuiz",
     "log": "showLog",
     "finish": "finishQuiz",
     "*actions": "defaultRoute"
@@ -21,7 +21,7 @@ app.Router.on("route:defaultRoute", function(actions){
 
 app.Router.on("route:playQuiz", function(){
   var questions = new app.models.QuestionCollection();
-  questions.fetch({ limit: app.totalQuestion, random: true, success: function(data){
+  questions.fetch({ limit: app.totalQuestion, random: false, success: function(data){
     app.currentView = new app.views.Game({ model: data })
   }});
 });

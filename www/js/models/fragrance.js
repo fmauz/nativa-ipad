@@ -1,10 +1,11 @@
 app.utils.store.fragrance = app.utils.store.extend({
   populate: function(){
-    this.data[0] = { id:1, name: "Perfume de Verbena", description: "Lorem ipsum Aute cillum deserunt ad officia officia ut aliquip ut ut in sunt laboris tempor et occaecat non aute.", start_score: 0, end_score: 99 }
-    this.data[1] = { id:2, name: "Perfume de Guaraná", description: "Lorem ipsum Aute cillum deserunt ad officia officia ut aliquip ut ut in sunt laboris tempor et occaecat non aute.", start_score: 100, end_score: 199 }
-    this.data[2] = { id:3, name: "Perfume de Ameixa", description: "Lorem ipsum Aute cillum deserunt ad officia officia ut aliquip ut ut in sunt laboris tempor et occaecat non aute.", start_score: 200, end_score: 299 }
-    this.data[3] = { id:4, name: "Perfume de Blueberry", description: "Lorem ipsum Aute cillum deserunt ad officia officia ut aliquip ut ut in sunt laboris tempor et occaecat non aute.", start_score: 300, end_score:399 }
-    this.data[4] = { id:5, name: "Perfume de Açaí", description: "Lorem ipsum Aute cillum deserunt ad officia officia ut aliquip ut ut in sunt laboris tempor et occaecat non aute.", start_score: 400, end_score:499 }
+    this.data[0] = { id:1, name: "RESULTADO VIOLETA", description: "Lorem ipsum ", start_score: 10, end_score: 15 }
+    this.data[1] = { id:2, name: "RESULTADO HIBISCO", description: "non aute.", start_score: 16, end_score: 20 }
+    this.data[2] = { id:3, name: "RESULTADO AMORA", description: "t non aute.", start_score: 21, end_score: 25 }
+    this.data[3] = { id:4, name: "RESULTADO AÇAÍ", description: "t non aute.", start_score: 26, end_score:30 }
+    this.data[4] = { id:5, name: "RESULTADO VERBENA", description: "t non aute.", start_score: 31, end_score:35 }
+    this.data[5] = { id:6, name: "RESULTADO AMEIXA", description: "t non aute.", start_score: 36, end_score:40 }
   }
 });
 

@@ -35,7 +35,7 @@ app.utils.formatDate = function ( d, f ) {
             for(v = d["get" + c]() // Execute date component getter
                 + /h/.test(c) // Increment Mont(h) components by 1
                 + ""; // Cast to String
-                v.length < p; // While padding needed, 
+                v.length < p; // While padding needed,
                 v = 0 + v); // pad with zeros
             return v // Return padded result
         })
@@ -44,7 +44,7 @@ app.utils.formatDate = function ( d, f ) {
   app.utils.store.populate = function(){
     var keys = $(Object.keys(app.utils.store)).not(["populate", "extend"]).get();
     for (var i = 0; i < keys.length; i++) {
-      var key = keys[i]; 
+      var key = keys[i];
       var object = app.utils.store[ key ];
       object.populate();
     };
@@ -84,13 +84,14 @@ app.utils.formatDate = function ( d, f ) {
     if( method == "read"){
       var data = this.store.data;
 
+
       if( typeof options.ids  != "undefined" ){
         data = _.filter( data, function(item){
           return _.contains(options.ids, item.id);
         });
       }
-      if( typeof options.random != "undefined" ) data = _.shuffle( data );
-      if( typeof options.limit != "undefined" ) data = data.slice(0, options.limit );
+      if( (typeof options.random == "undefined") || (options.random == true) ) data = _.shuffle( data );
+      if( typeof options.limit != "undefined" ) data = data.slice(0, options.limit ).reverse();
       if( typeof options.range != "undefined" ){
         data = _.filter( data, function(item){
           var field1 = options.range.fields[0],

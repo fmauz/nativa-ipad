@@ -1,12 +1,78 @@
 .header-page { padding:60px 0px 25px 0px; margin-bottom:10px; background:#c7c7c7;}
 
-.label_radio        { padding:10px 0px 10px 60px; background:url(../img/radio.png) no-repeat; }
-.label_radio input  { position:absolute; left:-99999px; }
 
-.label_radio.r_on   { background-position: 0px -39px; }
-.label_radio.r_off  { background-position: 0px 0px; }
 
 .answers { margin:10px 0px; }
 
 .menu_game li { margin-bottom:10px;}
 .backHome, .next { float:right; }
+
+
+/* nativa-boticario css v.0.0.1 */
+/* fontes  */
+a 				{ color: #fff; }
+a:hover				{ color: #fff; text-decoration: none; }
+@font-face			{ font-family: Bree; src: url(../fonts/BreeRegular.otf) format('opentype'); }
+@font-face			{ font-family: BreeLight; src: url(../fonts/BreeLight.otf) format('opentype'); }
+.regular-font			{ font-family: Bree; }
+.light-font			{ font-family: BreeLight;}
+.question-font-size		{ font-size: 28px; }
+.answers-font-size		{ font-size: 23px; }
+.buttons-font-size		{ font-size: 25px; }
+.shadow-font			{ text-shadow: 1px 2px 1px #333;}
+.slogan				{ color: #fff; }
+.slogan a			{ color: #fff; font-size: 170px; text-decoration: none; line-height: 130px; }
+.slogan a:hover		{ color: #fffbea; }
+.question			{ letter-spacing: 0px}
+.simple-btn-previous,
+.simple-btn-next		{ font-size: 23px; }
+
+/* bases */
+.container			{ margin: 0; padding: 0; }
+.bases				{ height: 768px; width: 1024px; background-position: 0 0; background-repeat: no-repeat; position: relative; }
+
+/* Tela de inicio */
+.home_screen			{ background-image: url( ../imgs_nativa/tela_abertura.jpg ); }
+.slogan				{ width: 1024px; height: 250px; padding:40px 0 0 0;  line-height: 50px; font-size: 36px; text-align: center; position:absolute; top: 50%; margin-top:-65px; display: block; text-align: center; }
+.slogan span			{ display: block; }
+.slogan a			{ display: block; width: 500px; height: 120px; margin:  0 auto; overflow: hidden; }
+.logbutton		            { position: absolute; bottom: 10px; left: 10px; }
+.backHome			{ position: absolute; bottom: 10px; right: 10px; }
+
+/* Questoes */
+.question			{ height: 141px; width: 600px; padding: 36px 0 0 54px; display: inline-block; }
+.answers-list li			{ display: block; height: 125px; width: 619px; padding: 0 0 0 89px; }
+.question_1			{ background-image: url(../imgs_nativa/bg_pergunta_1.jpg); }
+.question_2			{ background-image: url(../imgs_nativa/bg_pergunta_2.jpg); }
+.question_3			{ background-image: url(../imgs_nativa/bg_pergunta_3.jpg); }
+.question_4			{ background-image: url(../imgs_nativa/bg_pergunta_4.jpg); }
+.question_5			{ background-image: url(../imgs_nativa/bg_pergunta_5.jpg); }
+.question_6			{ background-image: url(../imgs_nativa/bg_pergunta_6.jpg); }
+.question_7			{ background-image: url(../imgs_nativa/bg_pergunta_7.jpg); }
+.question_8			{ background-image: url(../imgs_nativa/bg_pergunta_8.jpg); }
+.question_9			{ background-image: url(../imgs_nativa/bg_pergunta_9.jpg); }
+.question_10			{ background-image: url(../imgs_nativa/bg_pergunta_10.jpg); }
+
+/* Questões radio buttons */
+.label_radio        		{ padding:10px 0px 10px 60px; background:url(../img/radio.png) no-repeat; height: 19px; }
+.label_radio input  		{ position:absolute; left:-99999px; }
+
+.label_radio.r_on   		{ background-position: 0px -39px; }
+.label_radio.r_off  		{ background-position: 0px 0px; }
+
+/* Botões anterior e proximo e inicio */
+.simple-btn-previous		{ position: absolute; bottom: 26px; left: 37px; }
+.simple-btn-next		{ position: absolute; bottom: 26px; right: 282px; }
+.backHome			{ position: absolute; top: 10px; right: 20px; }
+
+/* Resultados de fragrancias */
+.fragance_1			{ background-image: url(../imgs_nativa/resultado_violeta.jpg); }
+.fragance_2			{ background-image: url(../imgs_nativa/resultado_hibisco.jpg); }
+.fragance_3			{ background-image: url(../imgs_nativa/resultado_amora.jpg); }
+.fragance_4			{ background-image: url(../imgs_nativa/resultado_acai.jpg); }
+.fragance_5			{ background-image: url(../imgs_nativa/resultado_verbena.jpg); }
+.fragance_6			{ background-image: url(../imgs_nativa/resultado_ameixa.jpg); }
+
+
+
+

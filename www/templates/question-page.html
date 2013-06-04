@@ -1,18 +1,21 @@
-<div class="row">
-  <a href="" class="backHome btn"><i class="icon-home"></i>Menu principal</a>
+<div class="bases question-font question_<%= id  %>">
+
+
+  <h2 class="question light-font question-font-size"><%= id %>. <%= text %></h2>
+
+    <ul class="unstyled answers-list">
+      <% _.each( answers, function(answer){ %>
+      <li>
+        <label class="label_radio light-font answers-font-size" for="answer_<%= answer.id %>">
+          <input <%= selected == answer.id ? 'checked="checked"' : ""%> type="radio" id="answer_<%= answer.id %>" name="answer" value="<%= answer.id%>" /> <%= answer.text %> (<%= answer.score%> pontos)
+        </label>
+      </li>
+      <% }); %>
+    </ul>
+
+  <a href="" class="previous simple-btn-previous regular-font disabled"> < Anterior</a>
+  <a href="" class="next simple-btn-next regular-font disabled">Próxima ></i></a>
+
+
+    <a href="" class="backHome">X</a>
 </div>
-
-<h2 class="question"><%= text %></h2>
-
-  <ul class="unstyled">
-    <% _.each( answers, function(answer){ %>
-    <li>
-      <label class="label_radio" for="answer_<%= answer.id %>">
-        <input <%= selected == answer.id ? 'checked="checked"' : ""%> type="radio" id="answer_<%= answer.id %>" name="answer" value="<%= answer.id%>" /> <%= answer.text %> (<%= answer.score%> pontos)
-      </label>
-    </li>
-    <% }); %>
-  </ul>
-
-<a href="" class="previous btn btn-large disabled"><i class="icon-arrow-left"></i> Anterior</a>
-<a href="" class="next btn btn-large disabled">Próximo <i class="icon-arrow-right"></i></a>

@@ -79,7 +79,7 @@ app.views.Game = Backbone.View.extend({
 
     if( this.prevQuestions.length > 0)
       $(".previous").removeClass("disabled");
-    
+
     return this;
   }
 });
