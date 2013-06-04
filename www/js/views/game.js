@@ -52,6 +52,7 @@ app.views.Game = Backbone.View.extend({
     this.goTo("");
   },
   initialize: function(){
+     $(document).bind('touchmove', false);
     this.start_time = app.utils.formatDate( new Date, "{Date:2}/{Month:2}/{FullYear} {Hours:2}:{Minutes:2}:{Seconds:2}" );
     this.prevQuestions = [];
     this.currentQuestion = null;

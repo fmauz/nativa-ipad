@@ -10,8 +10,10 @@
 
 /* nativa-boticario css v.0.0.1 */
 /* fontes  */
-a 				{ color: #fff; }
+
+a 				{ color: #fff; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 a:hover				{ color: #fff; text-decoration: none; }
+a.disabled			{ opacity: .4 }
 @font-face			{ font-family: Bree; src: url(../fonts/BreeRegular.otf) format('opentype'); }
 @font-face			{ font-family: BreeLight; src: url(../fonts/BreeLight.otf) format('opentype'); }
 .regular-font			{ font-family: Bree; }
@@ -47,11 +49,12 @@ a:hover				{ color: #fff; text-decoration: none; }
 .question_9 ul li label		{ color: #4a1863; }
 .question_10 h2,
 .question_10 ul li label		{ color: #014b96; }
-
+.r_on				{ font-family: Bree; }
 
 /* bases */
 .container			{ margin: 0; padding: 0; position:relative; }
 .bases				{ height: 768px; width: 1024px; background-position: 0 0; background-repeat: no-repeat; position: relative; }
+.table-results-container	{ height: 600px; overflow: auto }
 
 /* Tela de inicio */
 .home_screen			{ background-image: url( ../imgs_nativa/tela_abertura.jpg ); }
@@ -76,7 +79,7 @@ a:hover				{ color: #fff; text-decoration: none; }
 .question_10			{ background-image: url(../imgs_nativa/bg_pergunta_10.jpg); }
 
 /* Questões radio buttons */
-.label_radio        		{ padding:10px 0px 10px 60px; background:url(../img/radio.png) no-repeat; height: 19px; }
+.label_radio        		{ padding:10px 0px 10px 60px; background:url(../img/radio.png) no-repeat; height: 19px; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 .label_radio input  		{ position:absolute; left:-99999px; }
 
 .label_radio.r_on   		{ background-position: 0px -39px; }
@@ -97,6 +100,6 @@ a:hover				{ color: #fff; text-decoration: none; }
 .fragance_6			{ background-image: url(../imgs_nativa/resultado_ameixa.jpg); }
 
 /*Animação*/
-.animate { position: absolute; left:0px; top:0px; background:#FFF; width:100%;}
-.active { width:100%;}
+.animate 			{ position: absolute; left:0px; top:0px; background:#fff; width:100%;}
+.active 				{ width:100%;}
 

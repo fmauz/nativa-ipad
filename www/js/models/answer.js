@@ -33,14 +33,14 @@ app.utils.store.answer = app.utils.store.extend({
     this.data[29] = { id: 30, text: "Camisa xadrez e tênis.", score: 3, questionId: 8 };
     this.data[30] = { id: 31, text: "Camiseta branca e jaqueta de couro.", score: 4, questionId: 8 };
     this.data[31] = { id: 32, text: "Terno completo.", score: 1, questionId: 8 };
-    this.data[32] = { id: 33, text: "Resposta 1", score: 1, questionId: 9 };
-    this.data[33] = { id: 34, text: "Resposta 2", score: 2, questionId: 9 };
-    this.data[34] = { id: 35, text: "Resposta 3", score: 3, questionId: 9 };
-    this.data[35] = { id: 36, text: "Resposta 4", score: 4, questionId: 9 };
-    this.data[36] = { id: 37, text: "Resposta 1", score: 1, questionId: 10 };
-    this.data[37] = { id: 38, text: "Resposta 2", score: 2, questionId: 10 };
-    this.data[38] = { id: 39, text: "Resposta 3", score: 3, questionId: 10 };
-    this.data[39] = { id: 40, text: "Resposta 4", score: 4, questionId: 10 };
+    this.data[32] = { id: 33, text: "Lendo um bom livro.", score: 1, questionId: 9 };
+    this.data[33] = { id: 34, text: "Encontrando com os amigos.", score: 4, questionId: 9 };
+    this.data[34] = { id: 35, text: "Caminhando em um lugar agradável.", score: 2, questionId: 9 };
+    this.data[35] = { id: 36, text: "Fazendo compras no shopping.", score: 3, questionId: 9 };
+    this.data[36] = { id: 37, text: "Corrida.", score: 3, questionId: 10 };
+    this.data[37] = { id: 38, text: "Yoga.", score: 4, questionId: 10 };
+    this.data[38] = { id: 39, text: "Dança.", score: 1, questionId: 10 };
+    this.data[39] = { id: 40, text: "Volei.", score: 4, questionId: 10 };
   }
 });
 

@@ -13,6 +13,7 @@ app.views.Dashboard = Backbone.View.extend({
     this.goTo("log", true);
   },
   initialize: function(){
+     $(document).bind('touchmove', false);
     this.template = _.template( app.utils.templateLoader.get('dashboard-page') );
   },
   content_html: function(){

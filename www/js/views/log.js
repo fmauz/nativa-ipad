@@ -12,5 +12,8 @@ app.views.Log = Backbone.View.extend({
   },
   content_html: function(){
     return this.template({ items: this.model });
+  },
+  after_render: function(){
+       $(document).unbind('touchmove');
   }
 });
