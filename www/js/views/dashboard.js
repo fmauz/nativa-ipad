@@ -14,9 +14,8 @@ app.views.Dashboard = Backbone.View.extend({
   },
   initialize: function(){
     this.template = _.template( app.utils.templateLoader.get('dashboard-page') );
-    this.render();
   },
-  render: function(){
-    $(this.el).html( this.template() );
+  content_html: function(){
+    return this.template({ items: this.model });
   }
 });
