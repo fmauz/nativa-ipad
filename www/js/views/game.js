@@ -16,7 +16,7 @@ app.views.Game = Backbone.View.extend({
       this.model.models.push( this.currentQuestion );
       this.model.models.push( this.prevQuestions.pop() );
       this.currentQuestion = null;
-      this.loadQuestion();
+      this.loadQuestion( true );
     }
   },
   answerSelect: function(evt){
@@ -29,22 +29,22 @@ app.views.Game = Backbone.View.extend({
     evt.preventDefault();
     if( this.currentQuestion.get("selected") != null ) this.loadQuestion();
   },
-  loadQuestion: function(){
+  loadQuestion: function(backward){
     if( this.currentQuestion ) this.prevQuestions.push( this.currentQuestion );
     if( this.model.models.length == 0 ){
       this.end_time = app.utils.formatDate( new Date, "{Date:2}/{Month:2}/{FullYear} {Hours:2}:{Minutes:2}:{Seconds:2}" );
       this.goTo("finish");
     }else{
       this.currentQuestion = this.model.models.pop();
-      this.loadAnswers();
+      this.loadAnswers(backward);
     }
   },
-  loadAnswers: function(){
+  loadAnswers: function(backward){
     var answers = new app.models.AnswerCollection;
     var $this = this;
     answers.findByQuestion(this.currentQuestion, function(data){
       $this.currentQuestion.set("answers", data);
-      $this.render();
+      $this.animate( backward );
     });
   },
   back: function(evt){
@@ -71,15 +71,15 @@ app.views.Game = Backbone.View.extend({
     });
 
   },
-  render: function( ){
-    $(this.el).html( this.template( this.currentQuestion.toJSON() ) );
+  content_html: function( ){
+    return this.template( this.currentQuestion.toJSON() );
+  },
+  after_render: function(){
     this.styleControls();
     if( this.currentQuestion.get("selected") )
       $(".next").removeClass("disabled");
 
     if( this.prevQuestions.length > 0)
       $(".previous").removeClass("disabled");
-
-    return this;
   }
 });

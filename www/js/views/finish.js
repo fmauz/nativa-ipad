@@ -16,12 +16,8 @@ app.views.FinishGame = Backbone.View.extend({
   initialize: function(){
     this.template = _.template( app.utils.templateLoader.get('finish-page') );
   },
-  render: function( ){
-    var fragrances = new app.models.FragranceCollection();
-    var $this = this;
-    fragrances.fetch({ range: { value: this.score, fields: ["start_score", "end_score"] }, success: function( model ){
-      var fragrance = model.models[0].toJSON();
-       $($this.el).html( $this.template({ totalPontos: $this.score, fragrance: fragrance }) );
-    }});
+  content_html: function( ){
+    var fragrance = this.model.models[0].toJSON();
+    return this.template({ totalPontos: this.score, fragrance: fragrance });
   }
 });

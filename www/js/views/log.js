@@ -9,10 +9,8 @@ app.views.Log = Backbone.View.extend({
   },
   initialize: function(){
     this.template = _.template( app.utils.templateLoader.get('log-page') );
-    this.render();
   },
-  render: function(){
-    $(this.el).html( this.template({ items: this.model }) );
-    return this;
+  content_html: function(){
+    return this.template({ items: this.model });
   }
 });
