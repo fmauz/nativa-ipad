@@ -7,7 +7,7 @@
       <% _.each( answers, function(answer){ %>
       <li>
         <label class="label_radio light-font answers-font-size" for="answer_<%= answer.id %>">
-          <input <%= selected == answer.id ? 'checked="checked"' : ""%> type="radio" id="answer_<%= answer.id %>" name="answer" value="<%= answer.id%>" /> <%= answer.text %> (<%= answer.score%> pontos)
+          <input <%= selected == answer.id ? 'checked="checked"' : ""%> type="radio" id="answer_<%= answer.id %>" name="answer" value="<%= answer.id%>" /> <%= answer.text %>
         </label>
       </li>
       <% }); %>

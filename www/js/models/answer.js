@@ -5,7 +5,7 @@ app.utils.store.answer = app.utils.store.extend({
     this.data[1] = { id: 2, text: "Ficar ao sol em uma praia com belezas naturais.", score: 3, questionId: 1 };
     this.data[2] = { id: 3, text: "Aproveitar as baladas da cidade e dançar a noite toda.", score: 4, questionId: 1 };
     this.data[3] = { id: 4, text: "Viver uma aventura em meio a natureza.", score: 2, questionId: 1 };
-    this.data[4] = { id: 5, text: "Uma melodia que mexa com para você.", score: 3, questionId: 2 };
+    this.data[4] = { id: 5, text: "Uma melodia que mexa com você.", score: 3, questionId: 2 };
     this.data[5] = { id: 6, text: "Músicas cheias de ritmo pra você dançar pra ele.", score: 4, questionId: 2 };
     this.data[6] = { id: 7, text: "As baladas que sempre têm a palavra amor na letra.", score: 1, questionId: 2 };
     this.data[7] = { id: 8, text: "Música instrumental para vocês curtirem juntos.", score: 2, questionId: 2 };
@@ -40,7 +40,7 @@ app.utils.store.answer = app.utils.store.extend({
     this.data[36] = { id: 37, text: "Corrida.", score: 3, questionId: 10 };
     this.data[37] = { id: 38, text: "Yoga.", score: 4, questionId: 10 };
     this.data[38] = { id: 39, text: "Dança.", score: 1, questionId: 10 };
-    this.data[39] = { id: 40, text: "Volei.", score: 4, questionId: 10 };
+    this.data[39] = { id: 40, text: "Volei.", score: 2, questionId: 10 };
   }
 });
 

@@ -66,7 +66,7 @@ a.disabled			{ opacity: .4 }
 
 /* Questoes */
 .question			{ height: 141px; width: 600px; padding: 36px 0 0 54px; display: inline-block; }
-.answers-list li			{ display: block; height: 125px; width: 619px; padding: 0 0 0 89px; }
+.answers-list li			{ display: block; height: 115px; width: 619px; padding: 0 0 0 89px; }
 .question_1			{ background-image: url(../imgs_nativa/bg_pergunta_1.jpg); }
 .question_2			{ background-image: url(../imgs_nativa/bg_pergunta_2.jpg); }
 .question_3			{ background-image: url(../imgs_nativa/bg_pergunta_3.jpg); }
@@ -79,25 +79,25 @@ a.disabled			{ opacity: .4 }
 .question_10			{ background-image: url(../imgs_nativa/bg_pergunta_10.jpg); }
 
 /* Questões radio buttons */
-.label_radio        		{ padding:10px 0px 10px 60px; background:url(../img/radio.png) no-repeat; height: 19px; -webkit-tap-highlight-color: rgba(0,0,0,0); }
+.label_radio        		{ padding:22px 0px 10px 60px; background:url(../img/radio.png) no-repeat; height: 29px; -webkit-tap-highlight-color: rgba(0,0,0,0); }
 .label_radio input  		{ position:absolute; left:-99999px; }
 
-.label_radio.r_on   		{ background-position: 0px -39px; }
-.label_radio.r_off  		{ background-position: 0px 0px; }
+.label_radio.r_on   		{ background-position: 0px -65px; }
+.label_radio.r_off  		{ background-position: 0px 11px; }
 
 /* Botões anterior e proximo e inicio */
-.simple-btn-previous		{ position: absolute; bottom: 46px; left: 37px; }
-.simple-btn-next		{ position: absolute; bottom: 46px; right: 282px; }
+.simple-btn-previous		{ position: absolute; bottom: 40px; left: 37px; padding: 15px; }
+.simple-btn-next		{ position: absolute; bottom: 40px; right: 282px; padding: 15px; }
 .simple-btn-restart 		{ position: absolute; bottom: 46px; right: 40px; }
-.backHome			{ position: absolute; top: 10px; right: 20px; }
+.backHome			{ position: absolute; top: 10px; right: 20px; padding: 10px 20px; display: block; height: 30px; }
 
 /* Resultados de fragrancias */
-.fragance_1			{ background-image: url(../imgs_nativa/resultado_violeta.jpg); }
-.fragance_2			{ background-image: url(../imgs_nativa/resultado_hibisco.jpg); }
+.fragance_1			{ background-image: url(../imgs_nativa/resultado_hibisco.jpg); }
+.fragance_2			{ background-image: url(../imgs_nativa/resultado_violeta.jpg); }
 .fragance_3			{ background-image: url(../imgs_nativa/resultado_amora.jpg); }
 .fragance_4			{ background-image: url(../imgs_nativa/resultado_acai.jpg); }
-.fragance_5			{ background-image: url(../imgs_nativa/resultado_verbena.jpg); }
-.fragance_6			{ background-image: url(../imgs_nativa/resultado_ameixa.jpg); }
+.fragance_5			{ background-image: url(../imgs_nativa/resultado_ameixa.jpg); }
+.fragance_6			{ background-image: url(../imgs_nativa/resultado_verbena.jpg); }
 
 /*Animação*/
 .animate 			{ position: absolute; left:0px; top:0px; background:#fff; width:100%;}
